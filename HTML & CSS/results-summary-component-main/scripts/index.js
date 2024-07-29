@@ -1,4 +1,6 @@
-fetch("data.json")
+fetch(
+  "https://raw.githubusercontent.com/murdock33/frontend-mentor-project/main/HTML%20%26%20CSS/results-summary-component-main/data.json"
+)
   .then((response) => response.json())
   .then((data) => {
     const sumGroup = document.querySelector(".summary-group");
