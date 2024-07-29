@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data dari JSON</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+      }
+
+      section {
+        width: 100%;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="render-data"></main>
+
+    <script>
+      fetch("data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const mainEl = document.getElementById("render-data");
+
+          data.forEach((item) => {
+            const section = document.createElement("section");
+
+            fetch(item.icon)
+              .then((response) => response.text())
+              .then((svgContent) => {
+                section.innerHTML += `
+                  ${svgContent}
+                  <p>${item.category}</p>
+                  <p>${item.score} / 100</p>
+                `;
+              });
+
+            mainEl.appendChild(section);
+          });
+        });
+    </script>
+  </body>
+</html>
