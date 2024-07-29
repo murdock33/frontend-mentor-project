@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-using-json-file-to-render-the-content-trUaXkvC7k)
+- Live Site URL: [Add live site URL here](https://murdock33.github.io/frontend-mentor-project/HTML%20&%20CSS/results-summary-component-main/)
 
 ## My process
 
@@ -39,13 +39,16 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - JavaScript
+- Github Raw Content
 
 ### What I learned
 
-What I learned in this project is how to take data from JSON file and render it to JavaScript using Fetch 
+During this project, I focused on learning how to retrieve JSON data and dynamically render it using JavaScript. However, I faced a challenge when trying to directly access the JSON file hosted on GitHub Pages, as it's designed for static content. To work around this limitation, I implemented a solution by fetching the JSON data using GitHub's raw content API. This allowed me to successfully retrieve and process the data within my JavaScript application.
 
 ```js
-fetch("../data.json")
+fetch(
+  "https://raw.githubusercontent.com/murdock33/frontend-mentor-project/main/HTML%20%26%20CSS/results-summary-component-main/data.json"
+)
   .then((response) => response.json())
   .then((data) => {
     const sumGroup = document.querySelector(".summary-group");
@@ -75,4 +78,4 @@ fetch("../data.json")
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/murdock33)
