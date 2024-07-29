@@ -78,4 +78,4 @@ fetch(
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/murdock33)
+- Frontend Mentor - [@murdock33](https://www.frontendmentor.io/profile/murdock33)
