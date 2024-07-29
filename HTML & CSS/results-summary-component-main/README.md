@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-using-json-file-to-render-the-content-trUaXkvC7k)
-- Live Site URL: [Add live site URL here](https://murdock33.github.io/frontend-mentor-project/HTML%20&%20CSS/results-summary-component-main/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/results-summary-component-using-json-file-to-render-the-content-trUaXkvC7k)
+- Live Site URL: [live site URL](https://murdock33.github.io/frontend-mentor-project/HTML%20&%20CSS/results-summary-component-main/)
 
 ## My process
 
