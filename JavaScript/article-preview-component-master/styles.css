@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+}
+
+.svg-default {
+  fill: #6e8098;
+}
+
+.triangle {
+  position: absolute;
+  right: 115px;
+  bottom: -19px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid rgb(72, 85, 106);
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(236, 242, 248);
+}
+
+main {
+  max-width: 730px;
+  width: 88%;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+}
+
+main .img-container {
+  width: 285px;
+  height: 280px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 7% 100%;
+}
+
+main .content {
+  width: 445px;
+  height: 100%;
+  padding: 2rem 2.5rem;
+}
+
+.content h1 {
+  color: rgb(72, 85, 106);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.content p {
+  color: rgb(109, 127, 151);
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.content .profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 98%;
+}
+
+.profile-container .avatar-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profile-container .user-name {
+  font-weight: 700;
+  color: rgb(72, 85, 106);
+  margin-bottom: unset;
+}
+
+.profile-container .date {
+  display: block;
+  font-weight: 400;
+  margin-top: -3px;
+}
+
+.profile-container .btn-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: hsla(212, 23%, 69%, 0.2);
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.profile-container .btn-share:hover {
+  background-color: rgb(72, 85, 106);
+}
+
+.profile-container .btn-share:active {
+  width: 33px;
+  height: 33px;
+}
+
+.profile-container .btn-share:hover .svg-default {
+  fill: white;
+}
+
+.share {
+  position: absolute;
+  right: -112px;
+  bottom: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(72, 85, 106);
+  width: 250px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.invisible {
+  display: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 425px) {
+  main {
+    flex-direction: column;
+  }
+
+  main .img-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .img-container img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+  }
+
+  main .content {
+    width: 100%;
+    padding: 2rem 2.4rem 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 13px;
+    margin-bottom: 2rem;
+  }
+
+  .share {
+    bottom: -85px;
+    right: -45px;
+  }
+
+  .triangle {
+    display: none;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+  .share {
+    bottom: -90px;
+    right: -45px;
+  }
+
+  .triangle {
+    display: none;
+  }
+}
