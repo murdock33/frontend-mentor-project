@@ -29,17 +29,17 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-rating-component-Rew_km46mv)
-- Live Site URL: [Add live site URL here](https://murdock33.github.io/frontend-mentor-project/JavaScript/interactive-rating-component-main/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-Rew_km46mv)
+- Live Site URL: [Live site URL](https://murdock33.github.io/frontend-mentor-project/JavaScript/interactive-rating-component-main/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
+- JavaScript DOM manipulation
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/murdock33)
+- Frontend Mentor - [@murdock33](https://www.frontendmentor.io/profile/murdock33)
